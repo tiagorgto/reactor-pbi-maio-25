@@ -1,4 +1,4 @@
-from utils_interactive import *
+from utils import *
 import os
 import argparse
 import glob
@@ -8,8 +8,8 @@ current_folder = os.path.dirname(current_file)
 src_folder = os.path.join(current_folder, "..", "src")
 
 capacity_name = None
-workspace_name = 'TesteWebAuth'
-admin_upns = ["9322eb4a-4132-4bd1-8df1-5cd3d1d2400b"]
+workspace_name = 'ReactorPBI'
+admin_upns = [None]
 
 semanticmodel_parameters = None
 server = None
