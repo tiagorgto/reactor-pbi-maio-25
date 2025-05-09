@@ -1,0 +1,57 @@
+table FatDados
+	lineageTag: 35172bb4-1c66-45ce-9f9f-0d7b02d194a1
+
+	measure 'Valor Total' = ```
+			SUM(FatDados[Valor]) 
+			```
+		formatString: "R$"\ #,0.##;-"R$"\ #,0.##;"R$"\ #,0.##
+		lineageTag: 47d55889-4d8f-4db4-9100-506201e14ab9
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Data
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: d551cc1d-3c39-43a7-b08a-e4b4726f4994
+		summarizeBy: none
+		sourceColumn: Data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Valor
+		dataType: decimal
+		formatString: "R$"\ #,0.##;-"R$"\ #,0.##;"R$"\ #,0.##
+		lineageTag: bd52e607-ca8a-4258-9a64-cc0b438458e0
+		summarizeBy: sum
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	partition FatDados = m
+		mode: import
+		source =
+				let
+				    StartDate = Number.From(#date(2020, 1, 1)),
+				    EndDate = Number.From(Date.From(DateTime.LocalNow())),
+				    RootTable = Table.FromList(
+				        List.Transform({StartDate..EndDate}, Date.From),
+				        Splitter.SplitByNothing(),
+				        type table [Data=date]
+				    ),
+				    AddValue = Table.AddColumn(
+				        RootTable,
+				        "Valor",
+				        each Number.Round(Number.RandomBetween(250, 1000), 2),
+				        Currency.Type
+				    )
+				in
+				    AddValue
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,19 @@
+﻿Produto;ProdutoId;Categoria;CategoriaId
+Conta Corrente de Pessoa Física;1;Contas Bancárias;1
+Conta Corrente de Pessoa Jurídica;2;Contas Bancárias;1
+Conta Poupança;3;Contas Bancárias;1
+Cartão de Crédito;4;Empréstimos, Financiamentos e Crédito;2
+Empréstimo Pessoal;5;Empréstimos, Financiamentos e Crédito;2
+Empréstimo Consignado;6;Empréstimos, Financiamentos e Crédito;2
+Financiamento Imobiliário;7;Empréstimos, Financiamentos e Crédito;2
+Financiamento de Veículos;8;Empréstimos, Financiamentos e Crédito;2
+Consórcio;9;Empréstimos, Financiamentos e Crédito;2
+Certificados de Depósito Bancário (CDB);10;Investimentos;3
+Letras de Crédito Imobiliário (LCI);11;Investimentos;3
+Letras de Crédito do Agronegócio (LCA);12;Investimentos;3
+Fundos de Investimento;13;Investimentos;3
+Planos de Previdência;14;Seguros e Previdência;4
+Seguro Residencial;15;Seguros e Previdência;4
+Seguro de Vida;16;Seguros e Previdência;4
+Seguro Saúde;17;Seguros e Previdência;4
+Seguro de Veículos;18;Seguros e Previdência;4

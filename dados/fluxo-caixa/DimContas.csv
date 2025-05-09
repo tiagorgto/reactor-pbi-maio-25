@@ -1,0 +1,28 @@
+﻿ContaId;Conta;SubgrupoId;Subgrupo
+1101;Vendas de produtos;1100;Receitas com vendas
+1201;Receita de aplicações;1200;Receitas financeiras
+1202;Transferências de entradas;1200;Receitas financeiras
+2101;Matéria-prima;2100;Pagamento a fornecedores
+2102;Energia elétrica;2100;Pagamento a fornecedores
+2103;Insumos de produção;2100;Pagamento a fornecedores
+2104;Água;2100;Pagamento a fornecedores
+2105;Aluguéis;2100;Pagamento a fornecedores
+2106;Insumos;2100;Pagamento a fornecedores
+2107;Fretes;2100;Pagamento a fornecedores
+2108;Peças de manutenção;2100;Pagamento a fornecedores
+2109;Serviços terceirizados;2100;Pagamento a fornecedores
+2110;Material de consumo;2100;Pagamento a fornecedores
+2111;Outras despesas;2100;Pagamento a fornecedores
+2112;Despesas com viagens;2100;Pagamento a fornecedores
+2201;Salários;2200;Despesas com pessoal
+2202;Encargos;2200;Despesas com pessoal
+2203;Benefícios;2200;Despesas com pessoal
+2301;Pagamento de empréstimos;2300;Despesas financeiras
+2302;Despesas bancárias;2300;Despesas financeiras
+2303;Transferências de saídas;2300;Despesas financeiras
+2401;ICMS;2400;Impostos
+2402;Imposto de Renda / CSLL;2400;Impostos
+2403;COFINS;2400;Impostos
+2404;PIS;2400;Impostos
+2501;Máquinas e equipamentos;2500;Investimentos
+2502;Pesquisa e inovação;2500;Investimentos
